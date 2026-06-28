@@ -142,6 +142,15 @@ h1,h2,h3{font-family:var(--serif);line-height:1.1;margin:0}
   text-align:center;margin-top:.8rem;font-style:italic;
   color:var(--gold);font-size:.95rem;
 }
+/* Hero montage (all four flyers) — shadows are baked into the image */
+.hero-montage a{display:block;border-radius:var(--radius)}
+.hero-montage img{
+  max-width:560px;aspect-ratio:auto;
+  border-radius:0;box-shadow:none;background:transparent;
+  transition:transform .15s ease;
+}
+.hero-montage a:hover img{transform:translateY(-2px) scale(1.01)}
+.hero-montage figcaption{font-style:normal;font-weight:700}
 
 /* ---- Join Night card ---- */
 .join{background:var(--gold);padding:clamp(2rem,5vw,3rem) 0}
