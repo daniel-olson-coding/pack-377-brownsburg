@@ -68,6 +68,11 @@ h1,h2,h3{font-family:var(--serif);line-height:1.1;margin:0}
   box-shadow:0 4px 12px rgba(206,17,38,.35);
 }
 .btn-cta:hover,.btn-cta:focus-visible{background:var(--red-dark);color:var(--white);transform:translateY(-1px)}
+.btn-gold{
+  background:var(--gold);color:var(--blue-deep);
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
+}
+.btn-gold:hover,.btn-gold:focus-visible{background:#ffe04d;color:var(--blue-deep);transform:translateY(-1px)}
 
 /* ---- Header ---- */
 .site-header{
