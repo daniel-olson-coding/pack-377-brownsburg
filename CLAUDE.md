@@ -40,6 +40,11 @@ default to private.
   `.nojekyll` is present so GitHub Pages serves files as-is without Jekyll processing.
 - **Relative asset paths only** (e.g. `assets/…`, `flyers/…`) so the site works under the
   `/pack-377-brownsburg/` Pages subpath. No absolute `/…` paths.
+- **Cache-busting:** local asset references in `index.html` carry a `?v=N` query string
+  (e.g. `assets/styles.css?v=3`). GitHub Pages caches assets, so a plain refresh otherwise
+  serves stale CSS/images after a deploy. **Whenever you change a CSS file or an image/PDF
+  that keeps the same filename, bump `N` on every reference** (it's a single shared version —
+  keep them all the same). New files with new names don't need it until they're re-edited.
 - **Brand basics** (full system in `../pack-377-marketing/knowledge/branding.md`): Cub Scout Blue
   `#003F87`, Gold `#FCD116`, Scout Red `#CE1126`. Program is **Cub Scouts** (part of Scouting
   America) — never "Boy Scouts." Every recruiting piece must carry both required lines:
